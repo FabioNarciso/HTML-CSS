@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(139, 138, 138);
+            margin: 0px;
+        }
+
+        h1 {
+            background-color: rgba(150, 4, 4);
+            color: white;
+            box-shadow: inset 2px 2px 7px 5px rgba(12, 6, 17, 0.462);
+            text-align: center;
+            border: 2px solid rgb(0, 0, 0);
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        #Assuntos {
+            color: white;
+            background-color: rgb(150, 4, 4);
+            padding: 1px;
+            margin: 0px;
+            box-shadow: inset 2px 2px 7px 5px rgba(12, 6, 17, 0.462);
+        }
+
+        #Assuntos>p {
+            margin: 0px;
+            padding: 1px;
+        }
+
+        #Noticias {
+            margin: 1px;
+        }
+
+        nav {
+            background-color: rgb(150, 4, 4);
+            padding: 3px;
+            box-shadow: inset 2px 2px 7px 5px rgba(12, 6, 17, 0.462);
+        }
+
+        nav>a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-weight: bolder;
+            margin-right: 10px;
+
+        }
+
+        nav>a:hover {
+            text-decoration: underline;
+            color: lawngreen;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 3px;
+        }
+
+        div>p {
+            display: none;
+        }
+
+        div:hover>p {
+            display: block;
+            background-color: rgb(150, 4, 4);
+            padding: 3px;
+            box-shadow: inset 2px 2px 7px 5px rgba(253, 251, 255, 0.462);
+            color: white;
+            width: 160px;
+        }
+
+
+        article {
+            background-color: rgb(236, 232, 232);
+            padding: 10px;
+            box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.258);
+        }
+
+        article>aside {
+            background-color: lightgray;
+            text-align: right;
+            padding: 2px;
+
+
+        }
+
+        aside>p {
+            margin: 0.5px;
+        }
+
+        footer {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+            box-shadow: 2px 2px 5px rgba(254, 251, 251, 0.296);
+
+        }
+
+        footer>p {
+            margin: 0px;
+        }
+
+        #bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            border-radius: 50%;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Jornal Jornalístico</h1>
+        <nav>
+            <a href="#">Link1 -</a>
+            <a href="#">Link2 -</a>
+            <a href="#">Link3 -</a>
+            <a href="#">Link4 -</a>
+            <a href="#">Link5</a>
+
+        </nav>
+    </header>
+    <main>
+        <section id="Assuntos">
+            <p>Esportes - Política - Tecnologia - Culinária - Games</p>
+        </section>
+        <section id="Noticias">
+            <article>
+                <div>
+                    <h2>Política</h2>
+                    <p>Bando de vagabundo</p>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ullam placeat nesciunt eligendi illum
+                    asperiores, in aliquid laudantium suscipit ad, esse enim, sit alias velit veniam illo molestiae quis
+                    debitis?</p>
+                <aside>
+                    <p>Artigo escrito por PigzadaXd</p>
+                </aside>
+            </article>
+            <article>
+                <h2>Esportes</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ab obcaecati doloremque eveniet dicta
+                    laudantium quam minima sint cum tempora saepe architecto vitae, vel facilis. Accusamus repellendus
+                    reprehenderit id? Ducimus!</p>
+                <aside>Artigo escrito por Casimiro Miguel</aside>
+            </article>
+            <article>
+                <h2>Tecnologia</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum corporis ducimus eaque enim debitis
+                    voluptas quam reprehenderit et, necessitatibus, ut veniam neque nostrum recusandae modi ipsam earum?
+                    Dolorum, eius laboriosam.</p>
+                <aside>Artigo escrito por Chico moedas</aside>
+            </article>
+            <article>
+                <h2>Culinária</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, natus ipsam? Sequi dignissimos
+                    iste quam voluptatum tenetur expedita error enim non excepturi? Vitae velit amet facilis. Eveniet
+                    delectus repudiandae vero.</p>
+                <aside>Artigo escrito por Ana M. Braga</aside>
+            </article>
+            <article>
+                <h2>Games</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam distinctio ad nemo dolorem
+                    officiis, in ullam veniam incidunt ea totam enim aperiam! Dolore, ullam eum aspernatur beatae a sunt
+                    pariatur.</p>
+                <aside>Artigo escrito por Alanzoka</aside>
+            </article>
+
+        </section>
+
+    </main>
+    <footer>
+        <p>Desenvolvido pelo curso em vídeo</p>
+    </footer>
+    <div id="bola"></div>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+
+<body>
+
+    <H1>Imagens dinâmicas</H1>
+    <p>Tente abrir essesite em varios dispositivos diferentes ou diminua ou aumuente o zoom do dispositivos</p>
+    <picture>
+        <source media="(max-width: 700px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 950px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="IMAGENS/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Áudios</h1>
+    <p>Vamos aprender a colocar áudios em seus sites</p>
+    <audio src="audio/happy_msc.mp3" controls autoplay></audio>
+
+    <h1>Vídeos</h1>
+    <p>Aprenderemos colocar videos locais</p>
+    <p>Este video está no meu próprio video</p>
+    <video controls autoplay loop src="video/meuvideomp4.mp4" width="300"></video>
+    <h1>Vídeos externos</h1>
+    <p>Assita o video do canal <STROng>Você sabia?</STROng></p>
+    <iframe width="500" height="300" src="https://www.youtube.com/embed/AmdzJfqrbRM?si=cIjVk4d9w7gnjfhs"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+
+
+
+
+
+
+</body>
+
+</html>
