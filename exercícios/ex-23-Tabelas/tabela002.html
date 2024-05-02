@@ -12,12 +12,21 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         caption{
             background-color: lightgray;
             font-size: 1.5em;
             font-weight: bold;
             padding: 5px;
+        }
+        /*
+        Fixar Cabeçalho
+        */
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: gray;
         }
         /*
         efeito zebrado 
