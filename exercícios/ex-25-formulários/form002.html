@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste de formulário</title>
 </head>
+
 <body>
-    <form action="cadastro.php" method="get">
-        <p>
-            <label for="iusu">Usuário</label>
-            <input type="text" name="iusu" id="iusu" required minlength="5"
-            maxlength="15" placeholder="Nome do Usuário" size="11">
-        </p>
-        <p>
-            <label for="isenha">Senha</label>
-            <input type="password" name="isenha" id="isenha" required minlength="8" maxlength="20" placeholder="Senha do Usuário" size="11">
-        </p>
-        <p><input type="submit" value="Enviar">
-        <input type="reset" value="Limpar">
-    </p>
-    </form>
-    
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <form action="cadastro.php" method="get">
+            <p>
+                <label for="iusu">Usuário</label>
+                <input type="text" name="iusu" id="iusu" required minlength="5" maxlength="15" placeholder="Nome do Usuário"
+                    size="11">
+            </p>
+            <p>
+                <label for="isenha">Senha</label>
+                <input type="password" name="isenha" id="isenha" required minlength="8" maxlength="20"
+                    placeholder="Senha do Usuário" size="11">
+            </p>
+            <label for="itel">Telefone</label>
+            <input type="tel" name="itel" id="itel" placeholder="(xx)xxxxx-xxxx">
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </fieldset>
+
 </body>
+
 </html>
